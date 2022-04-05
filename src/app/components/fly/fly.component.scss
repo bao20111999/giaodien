@@ -1,0 +1,254 @@
+.tab {
+  overflow: hidden;
+  padding: 30px 25px 0px;
+
+}
+
+.fly-header{
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  position: relative;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #316BFF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+
+  border-top: none;
+}
+
+.hotel{
+  display:flex;
+  margin-top:50px;
+ 
+}
+.tb-form{
+  background-color:#E7E8EA;
+  margin-left: 10px;
+  border-radius: 5px;
+  width: 30%;
+}
+.tb-i2{
+  margin-left: 247px !important;
+  position: absolute;
+  margin-top: -60px;
+}
+#fname{
+  opacity: 0.7;
+  border: 0;
+  margin-top: 15px;
+  background-color: #E7E8EA;
+  padding: 5px 0;
+}
+.tb-i1{
+  position: absolute;
+  margin-left: 247px;
+  margin-top: -60px;
+}
+
+form{
+  padding: 25px 15px 15px 10px;
+}
+
+.quantity{
+  border: 0;
+  text-align: center;
+}
+.tablinks i{
+  margin-right: 10px;
+}
+
+form i{
+  color: darkgray;
+  background-color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+.tb-search{
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.tb-pass{
+  display:none;
+}
+.tb-search a{
+  padding: 30px 70px;
+  background-color: #3B71FE;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.tab-right{
+  display: flex;
+  float: right;
+  margin-top: 15px;
+  margin-right: 22%;
+}
+.mr-1{
+  margin-right: 20px;
+}
+.bdt-1{
+  border-top: 1px solid #ccc;
+}
+.display-none {
+  display: none;
+}
+
+.display {
+  display: block;
+}
+.tb-bdt{
+  border-top: 1px solid #ccc;
+  width: 75%;
+  margin-left: 2%;
+}
+.passsenger-container {
+  position: absolute;
+  top: -370px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  display: none;
+}
+.passsenger-wrapper .passsenger-container.active {
+  display: block;
+}
+.passsenger-wrapper .passsenger-container.active:before {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px){
+  .tablinks{
+    font-size:14px !important;
+  }
+  .tb-i1{
+  margin-left: 190px;
+  }
+  .tb-i2{
+  margin-left:178px !important
+  }
+  .tb-search a{
+  padding: 35px 40px;
+  }
+  .active::before{
+    bottom: 64%;
+  }
+}
+@media screen and (max-width:480px) {
+  .tablinks{
+    padding:5px !important;
+  }
+  .ml-1{
+    margin-left:-10px !important;
+  }
+  .tb-bdt{
+    border-top: 1px solid #ccc;
+    width: 85%;
+    margin-left: 5%;
+    margin-top: -60px;
+  }
+  .active::before{
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: #316BFF;
+    position: absolute;
+    left: 18px;
+    bottom: 88%;
+  }
+  .tab-right div{
+    font-size:12px;
+  }
+  .hotel{
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-gap:10px;
+    grid-template-areas: 
+    "h1 h1"
+    "h2 h3"
+    "h4 h4";
+  }
+  .tb-form:first-child{
+    grid-area: h1;
+    width: 100%;
+  }
+  .tb-form:nth-child(2){
+    grid-area: h2;
+    width: 100%;
+    height: 100%;
+  }
+  .tb-form:nth-child(2) input{
+    margin-top: 5px !important;
+    font-size: 14px;
+    position:absolute;
+  }
+  .tb-form:nth-child(3){
+    grid-area: h3;
+    width: 100%;
+    height: 100%;
+  }
+  .tb-form:nth-child(3) input{
+    margin-top: 5px !important;
+    font-size: 14px;
+    position:absolute;
+  }
+  .tb-pass{
+    grid-area: h4;
+    display:inline-block;
+    background-color:#E7E8EA;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 5px;
+
+  }
+  .tb-i1, .tb-i2{
+    display:none;
+  }
+  .tb-search{
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+  .tb-search a{
+    padding: 15px 113px;
+  }
+  .tab button{
+    font-size:15px;
+  }
+  .tablinks i{
+    margin-right: 5px;
+  }
+  .ml20{
+    margin-left:20px;
+  }
+  .tab-right{
+    margin-right: 40%;
+  }
+}

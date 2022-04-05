@@ -1,0 +1,50 @@
+.travel-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.travel-star i{
+    color: yellow;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+.travel-star{
+    display: flex;
+}
+.travel-name{
+    color: white;
+    margin-top: -30%;
+    margin-left: 8%;
+}
+.travel-name h5{
+    font-size: 26px;
+}
+.tb-travel{
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 480px){
+    .travel-list{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 20px;
+        margin-left: 5%;
+    }
+    .travel-menu img{
+        width: 90%;
+        height: 100%;
+    }
+    .tb-travel{
+        margin-left: 5%;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 1114px){
+    .travel-list{
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-gap: 50px;
+    }
+    .travel-menu img{
+        width:110%;
+        
+    }
+}

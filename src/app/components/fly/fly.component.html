@@ -1,0 +1,104 @@
+<div class=fly-header>
+  <div class="tab">
+      <button class="tablinks active ml-1" (click)="openCity($event, '.Hotel')"><i class="fa fa-bed" aria-hidden="true"></i>Hotel</button>
+      <button class="tablinks ml20" (click)="openCity($event, '.Fli')"><i class="fa fa-plane" aria-hidden="true"></i>Flight</button>
+      <button class="tablinks ml20" (click)="openCity($event, '.Car')"><i class="fa fa-car" aria-hidden="true"></i>Car Rental</button>
+      <div class="tab-right">
+          <div class="mr-1">
+              Round trip 
+              <a href="#"> <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+          </div>
+          <div class="passsenger-wrapper" >
+                <a (click)="passsenger($event)" href="#!">1 Passsenger<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                <div class="passsenger-container">
+                    <div class="fly-passsenger">
+                        <div class="pass-list">
+                            <div class="pass-menu">
+                                <h6>Adults</h6>
+                                <p>Ages 13 or above</p>
+                            </div>
+                            <div>
+                                <input onclick="var result = document.getElementById('adults_quantity'); var qty = result.value; if( !isNaN(qty) & qty>0) result.value--;return false;" type='button' value='-' />
+                                <input id='adults_quantity' class="quantity" min='0' name='adults_quantity' type='text' value='0' />
+                                <input onclick="var result = document.getElementById('adults_quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
+                            </div>
+                        </div>
+                        <div class="pass-list">
+                            <div class="pass-menu">
+                                <h6>Children</h6>
+                                <p>Ages 2 - 12</p>
+                            </div>
+                            <div>
+                                <input onclick="var result = document.getElementById('children_quantity'); var qty = result.value; if( !isNaN(qty) & qty>0) result.value--;return false;" type='button' value='-' />
+                                <input id='children_quantity' class="quantity" min='0' name='children_quantity' type='text' value='0' />
+                                <input onclick="var result = document.getElementById('children_quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
+                            </div>
+                        </div>
+                        <div class="pass-list">
+                            <div class="pass-menu">
+                                <h6>Infants</h6>
+                                <p>under 2</p>
+                            </div>
+                            <div>
+                                <input onclick="var result = document.getElementById('pass_quantity'); var qty = result.value; if( !isNaN(qty) & qty>0 ) result.value--;return false;" type='button' value='-' />
+                                <input id='pass_quantity' class="quantity" min='0' name='pass_quantity' type='text' value='0' />
+                                <input onclick="var result = document.getElementById('pass_quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+  </div>
+    <div class="tb-bdt">
+
+    </div>
+  
+  <div  class="Hotel tabcontent display">
+      <div class="hotel">  
+          <div class="tb-form">
+              <form action="/action_page.php">
+                  <label for="fname">Location</label><br>
+                  <input type="text" id="fname" required="" name="fname" value="" placeholder="Where are you from ?"><br>
+                  <div class="tb-i1"><i class="fa fa-exchange" aria-hidden="true"></i></div>
+              </form>
+          </div>
+          <div class="tb-form">
+              <form action="/action_page.php">
+                  <label for="fname">Check in</label><br>
+                  <input type="date" id="fname" required="" name="fname" value="" placeholder="Add Date"><br>
+                  <div class="tb-i2"><i class="fa fa-exchange" aria-hidden="true"></i></div>
+              </form>
+          </div>
+          <div class="tb-form">
+              <form action="/action_page.php">
+                  <label for="fname">Check out</label><br>
+                  <input type="date" id="fname" required="" name="fname" value="" placeholder="Add Date"><br>
+                  
+              </form>
+          </div>
+          <div class="tb-pass">
+            <form action="/action_page.php">
+                <label for="fname">Passsenger</label><br>
+                <input type="text" id="fname" required="" name="fname" value="" placeholder="Add Passsenger"><br>
+                
+            </form>
+          </div>
+           <div class="tb-search">
+               <a href="#">Search</a>
+           </div>
+      </div> 
+    </div>
+  
+    <div class="Fli tabcontent">
+        <h3>fli</h3>
+        <p>Fli đặt máy bay.</p> 
+    </div>
+  
+    <div  class="Car tabcontent">
+        <h3>Car</h3>
+        <p>Car đặt vé xe ô tô.</p>
+    </div>
+    
+</div>
+

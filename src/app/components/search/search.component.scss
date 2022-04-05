@@ -1,0 +1,85 @@
+.tb-search {
+    background-color: #E5E5E5;
+    font-family: sans-serif;
+    width: 100%;
+    margin-top: -300px;
+}
+.tb-search-img{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 1%;
+}
+.tb-search-img h6{
+    margin-top: 15px;
+    font-size: 20px;
+
+}
+
+.search-guide{
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+
+}
+.search-text h2{
+    text-align: center;
+    margin-top: 30%;
+}
+.tb-menu {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.tb-menu img{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.tb-menu h6, p {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.tb-hot{
+    position: absolute;
+    background-color: red;
+    padding: 0px 20px;
+    border-radius: 5px;
+    color:white;
+    font-size: 10px;
+    margin-left: 17%;
+    margin-top: -6%;
+}
+@media only screen and (min-width: 725px) and (max-width: 1024px){
+    .tb-hot{
+        margin-top: -70px;
+        margin-left: 160px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .tb-menu h6{
+        font-size: 10px;
+    }
+    
+    .search-text h2{
+        font-size:18px;
+    }
+    .search-text p{
+    font-size: 10px;
+    width: 50%;
+    margin-left: 25%;
+    }
+    .tb-menu p{
+        font-size: 9px;
+    }
+    .tb-hot{
+        margin-left: 13%;
+        margin-top: -17%;
+        padding: 0px 10px;
+        font-size: 8px;
+    }
+    .tb-search{
+        margin-top: -100px;
+    }
+    
+    
+}

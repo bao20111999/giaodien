@@ -1,0 +1,81 @@
+.trend-price{
+    display: flex;
+}
+.trend-star{
+    display: flex;
+    margin-top: 15px;
+}
+.trend-star i{
+    color: yellow;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+.trend-button{
+    background-color: #316BFF;
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    margin-top: 18px;
+}
+.trend-list{
+    display: grid;
+  grid-template-columns: auto auto;
+}
+.trend-title{
+    text-align: center;
+    margin-top: 50px;
+}
+.trend-detail{
+    margin-left: 55px;
+    text-align: left;
+    margin-top: 20px;
+}
+.trend-menu{
+    margin-left: 75px;
+    display: flex;
+    width: 534px;
+    height: 216px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+.trend-price b{
+    font-size: 21px;
+}
+.trend-img{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+@media only screen and (max-width: 480px){
+    .trend-list{
+        display: grid;
+        grid-template-columns:1fr;
+
+        margin-left: 5%;
+    }
+    .trend-menu{
+        width: 335px;
+        height:216px;
+        margin-left: 3%;
+    }
+    .trend-img img{
+        width:160px;
+        height:184;
+    }
+    .trend-price b{
+        font-size: 15px;
+    }
+    .trend-detail{
+        margin-left: 20px;
+    }
+    .travel-title p{
+        font-size:12px;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width:1024px){
+    .trend-menu{
+        margin-left: 5%;
+        width: 80%;
+
+    }
+}

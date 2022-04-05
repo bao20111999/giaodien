@@ -1,0 +1,52 @@
+.tb-header{
+    
+    
+    font-family: OpenSans;
+    background-color:white;
+    
+
+}
+.header-body{
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    margin-left: 3%;
+}
+.header-left{
+    display: flex;
+    margin-top: 20px;
+}
+.header-left img{
+    width: 38px;
+    height: 40px;
+}
+.header-left p{
+    margin-top: 8px;
+    font-size:bold;
+    line-height:27px;
+    color:#222529;
+    margin-left: 10px;
+}
+.header-right ul{
+    display: flex;
+}
+.header-right{
+    margin-top:23px;
+}
+.header-right ul li {
+    margin-right: 15px;
+    list-style-type: none;
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px){
+    .header-left img{
+        width: 25px;
+        height: 25px;
+    }
+    .header-left p{
+        margin-top: 2px;
+    }
+    .header-right ul li {
+        margin-right: 5px;
+    }
+}

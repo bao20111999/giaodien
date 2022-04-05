@@ -1,0 +1,51 @@
+.top-tour{
+     margin-top: 5%;
+}
+.tb-toptour{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 2%;
+}
+
+.top-tour-title{
+    margin-left: 2%;
+}
+
+.toptour-introduce{
+    color:white;
+}
+.toptour-address {
+    margin-top: -22%;
+    margin-left: 5%;
+}
+.toptour-address h6{
+    font-size:34px;
+}
+.toptour-city{
+
+    position: absolute;
+
+    padding: 5px 20px;
+    background-color: #91838394;
+    border-radius: 20px;
+    margin-top: -29%;
+    margin-left: 2%;
+} 
+@media only screen and (max-width: 720px){
+        .tb-toptour{
+            display:grid;
+            grid-template-columns: 1fr;
+        }
+        .toptour-city{
+            margin-top: -100%;
+        }
+}
+@media only screen and (min-width: 725px) and (max-width: 1024px){
+    img{
+        width: 100%;
+    }
+    .toptour-address{
+        margin-top: -26%;
+    }
+}
